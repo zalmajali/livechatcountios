@@ -166,6 +166,7 @@ export class HomePage implements OnInit {
     this.genaratedDate = this.year+""+this.month+""+this.day;
     this.genaratedFullDate = this.year+""+this.month+""+this.day+this.hour+this.minutes+this.seconds;
     await this.functionReturnData();
+    await this.functionReturnDataQue();
     await loading.present();
   }
     async checkLoginDataUser(){
