@@ -162,6 +162,7 @@ export class QueuedPage implements OnInit {
     this.genaratedDate = this.year+""+this.month+""+this.day;
     this.genaratedFullDate = this.year+""+this.month+""+this.day+this.hour+this.minutes+this.seconds;
     await this.functionReturnData();
+    await this.functionReturnDataAll();
     await loading.present();
   }
   functionRemoveSearch(){
